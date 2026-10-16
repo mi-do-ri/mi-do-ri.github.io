@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+  <path d="M0 0h1200v18H0z" fill="#0b1f3a"/>
+  <circle cx="1030" cy="120" r="250" fill="#e5eef7"/>
+  <circle cx="1030" cy="120" r="145" fill="none" stroke="#0b1f3a" stroke-width="2"/>
+  <text x="90" y="245" fill="#0b1f3a" font-family="Arial, sans-serif" font-size="42">THUY DUONG NGUYEN</text>
+  <text x="90" y="345" fill="#0b1f3a" font-family="Arial, sans-serif" font-size="68" font-weight="600">AI researcher</text>
+  <text x="90" y="420" fill="#536277" font-family="Arial, sans-serif" font-size="34">Reasoning · Agents · Continual learning</text>
+</svg>
