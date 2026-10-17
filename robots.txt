@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mi-do-ri.github.io/thuyduongnguyen.github.io/sitemap.xml
+Sitemap: https://mi-do-ri.github.io/sitemap.xml
