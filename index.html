@@ -52,35 +52,31 @@
 
     <div class="page-shell">
       <header class="site-header">
-        <div class="profile-header">
-          <a class="avatar" href="./" aria-label="Thuy Duong Nguyen, home">TD</a>
-          <div class="identity">
-            <a class="site-title" href="./">Thuy Duong Nguyen</a>
-            <nav aria-label="Main navigation">
-              <ul>
-                <li><a class="active" href="./">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="https://scholar.google.com/citations?user=saEovKIAAAAJ&amp;hl=en">Scholar</a></li>
-                <li><a href="assets/Thuy-Duong-Nguyen-CV.pdf">CV</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+        <a class="brand" href="./" aria-label="Thuy Duong Nguyen, home">
+          <span class="brand-mark" aria-hidden="true">td</span>
+          <span class="brand-name">thuy duong<br>nguyen</span>
+        </a>
 
-        <button class="theme-toggle" type="button" aria-label="Use dark theme" title="Change color theme">
-          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="3.5"></circle>
-            <path d="M12 2.5v2M12 19.5v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2.5 12h2M19.5 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41"></path>
-          </svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5a8.5 8.5 0 1 0 10.6 10.6Z"></path>
-          </svg>
-        </button>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a class="active" href="./">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="https://scholar.google.com/citations?user=saEovKIAAAAJ&amp;hl=en">scholar</a></li>
+            <li><a href="assets/Thuy-Duong-Nguyen-CV.pdf">cv</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-links" aria-label="Contact links">
+          <a href="mailto:thuyduo3@ualberta.ca">email</a>
+          <a href="https://github.com/mi-do-ri">github</a>
+          <a href="https://www.linkedin.com/in/thuy-duong-nguyen-833b88209/">linkedin</a>
+        </div>
       </header>
 
       <main id="content">
         <section class="introduction" aria-labelledby="intro-title">
-          <h1 class="title-small" id="intro-title">Hi there, I am Duong!</h1>
+          <p class="eyebrow">hello</p>
+          <h1 id="intro-title">I am Duong, an AI researcher.</h1>
           <div class="intro-copy">
             <p>
               I am a thesis-based MSc student in Computing Science at the
@@ -100,7 +96,8 @@
           </div>
         </section>
 
-        <section aria-labelledby="publications-title">
+        <section class="publications-section" aria-labelledby="publications-title">
+          <p class="eyebrow">research</p>
           <h2 id="publications-title">Publications &amp; Patent</h2>
           <p class="section-note">[*] denotes equal contribution.</p>
 
@@ -155,34 +152,6 @@
             </ul>
           </article>
         </section>
-
-        <section aria-labelledby="projects-title">
-          <h2 id="projects-title">Selected Projects</h2>
-
-          <article class="project">
-            <h3>LongHarness Bench</h3>
-            <p>
-              The benchmark tests retrieval and context-management strategies for long-context agents. Similar
-              systems can differ by up to 12.5× in cost.
-            </p>
-          </article>
-
-          <article class="project">
-            <h3>E-commerce Agent</h3>
-            <p>
-              I built data-curation and evaluation tools for a personal shopping agent. I also developed an FAQ
-              module that reached 95.5% accuracy on a synthetic test set.
-            </p>
-          </article>
-
-          <article class="project">
-            <h3>Agent-UniRAG</h3>
-            <p>
-              I designed an agent framework for question answering and distilled its knowledge into smaller
-              open-source language models.
-            </p>
-          </article>
-        </section>
       </main>
 
       <footer class="site-footer">
@@ -195,6 +164,5 @@
       </footer>
     </div>
 
-    <script src="script.js"></script>
   </body>
 </html>

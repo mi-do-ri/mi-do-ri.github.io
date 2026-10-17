@@ -16,4 +16,4 @@ Then open `http://localhost:8080`.
 
 Create the repository `mi-do-ri.github.io`. Add the files from this folder to the repository root. GitHub Pages will publish the site at `https://mi-do-ri.github.io/`.
 
-The site has no build step. It uses plain HTML, CSS, and JavaScript.
+The site has no build step. It uses plain HTML and CSS.
