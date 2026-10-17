@@ -142,14 +142,14 @@ h1 {
 .introduction h1 {
   max-width: none;
   margin-bottom: 1rem;
-  font-size: clamp(2.1rem, 3.5vw, 3rem);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
   letter-spacing: -0.045em;
   line-height: 1;
 }
 
 h2 {
   margin: 0 0 1rem;
-  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-size: clamp(1.45rem, 2.2vw, 1.9rem);
   letter-spacing: -0.045em;
   line-height: 1.02;
 }
