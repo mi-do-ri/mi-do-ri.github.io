@@ -32,7 +32,7 @@
         "@type": "Person",
         "name": "Thuy Duong Nguyen",
         "url": "https://mi-do-ri.github.io/",
-        "email": "mailto:thuyduo3@ualberta.ca",
+        "email": "thuyduongnguyen@ualberta.ca",
         "jobTitle": "MSc Student in Computing Science",
         "affiliation": {
           "@type": "CollegeOrUniversity",
@@ -41,7 +41,8 @@
         "sameAs": [
           "https://scholar.google.com/citations?user=saEovKIAAAAJ&hl=en",
           "https://github.com/mi-do-ri",
-          "https://www.linkedin.com/in/thuy-duong-nguyen-833b88209/"
+          "https://www.linkedin.com/in/thuy-duong-nguyen-833b88209/",
+          "https://x.com/ngtduong6"
         ]
       }
     </script>
@@ -52,117 +53,133 @@
 
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="./" aria-label="Thuy Duong Nguyen, home">
-          <span class="brand-mark" aria-hidden="true">td</span>
-          <span class="brand-name">thuy duong<br>nguyen</span>
-        </a>
-
         <nav aria-label="Main navigation">
           <ul>
-            <li><a class="active" href="./">home</a></li>
-            <li><a href="about.html">about me</a></li>
-            <li><a href="https://scholar.google.com/citations?user=saEovKIAAAAJ&amp;hl=en">scholar</a></li>
-            <li><a href="assets/Thuy-Duong-Nguyen-CV.pdf">cv</a></li>
+            <li><a class="active" href="#home" aria-current="location">home</a></li>
+            <li><a href="#publications">publications</a></li>
           </ul>
         </nav>
-
-        <div class="header-links" aria-label="Contact links">
-          <a href="mailto:thuyduo3@ualberta.ca">email</a>
-          <a href="https://github.com/mi-do-ri">github</a>
-          <a href="https://www.linkedin.com/in/thuy-duong-nguyen-833b88209/">linkedin</a>
-        </div>
       </header>
 
       <main id="content">
-        <section class="introduction" aria-labelledby="intro-title">
-          <p class="eyebrow">hello</p>
-          <h1 id="intro-title">I am Duong, an AI researcher.</h1>
+        <section class="introduction" id="home" aria-labelledby="intro-title">
+          <h1 id="intro-title">Thuy Duong Nguyen</h1>
+          <ul class="intro-links" aria-label="Profile and contact links">
+            <li>Email: thuyduongnguyen@ualberta.ca</li>
+            <li><a href="https://scholar.google.com/citations?user=saEovKIAAAAJ&amp;hl=en">Google Scholar</a></li>
+            <li><a href="https://x.com/ngtduong6">Twitter</a></li>
+            <li><a href="assets/Thuy-Duong-Nguyen-CV.pdf">CV</a></li>
+          </ul>
           <div class="intro-copy">
-            <p>
-              I am a thesis-based MSc student in Computing Science at the
-              <a href="https://www.ualberta.ca/en/computing-science/index.html">University of Alberta</a>,
-              advised by <a href="https://xiye17.github.io/">Dr. Xi Ye</a> and
-              <a href="https://thelyad.github.io/">Dr. Jocelyn Chen</a>.
-            </p>
-            <p>
-              My goal is to build AI agents that support and align with humans. I study language-model reasoning
-              and develop reliable agents that learn from evolving contexts and interact with people.
-            </p>
-            <p>
-              Previously, I was an AI Resident at
-              <a href="https://www.qualcomm.com/research/artificial-intelligence">Qualcomm AI Research</a>
-              and <a href="https://www.vinai.io/">VinAI Research</a>.
-            </p>
+            <div class="intro-text">
+              <p>
+                I am an MSc student at the
+                University of Alberta,
+                advised by <a href="https://thelyad.github.io/">Dr. Jocelyn Chen</a> and
+                <a href="https://xiye17.github.io/">Dr. Xi Ye</a>.
+              </p>
+              <p>
+                My research focuses on building AI agents that support and align with humans. I study language-model reasoning
+                and develop reliable agents that learn from evolving contexts and interact with people.
+              </p>
+              <p>
+                Previously, I was an AI Resident at
+                Qualcomm AI Research,
+                where I worked with Dr. Tung Pham and Dr. Dat Quoc Nguyen.
+              </p>
+            </div>
+            <div class="intro-photo-frame">
+              <img
+                class="intro-photo"
+                src="assets/thuy-duong-royal-tyrrell.jpg"
+                alt="Thuy Duong Nguyen outdoors beside a pond in autumn"
+                width="1600"
+                height="1200"
+              >
+            </div>
           </div>
         </section>
 
-        <section class="publications-section" aria-labelledby="publications-title">
-          <p class="eyebrow">research</p>
-          <h2 id="publications-title">Publications &amp; Patent</h2>
-          <p class="section-note">[*] denotes equal contribution.</p>
+        <section class="publications-section" id="publications" aria-labelledby="publications-title">
+          <h2 id="publications-title">Publications</h2>
+          <p class="section-note"><em>[*] denotes equal contribution. [⁺] denotes equal advising.</em></p>
 
           <article class="publication">
             <p>
               <strong>LongHarness Bench: Stress-Testing Language Model Harnesses for Long-Context Reasoning</strong><br>
-              Quang Hieu Pham*, <u><strong>Thuy Duong Nguyen*</strong></u>, Jocelyn Qiaochu Chen, Xi Ye.<br>
+              Quang Hieu Pham<sup>*</sup>, <u><strong>Thuy Duong Nguyen</strong></u><sup>*</sup>,
+              Jocelyn Chen<sup>+</sup>, Xi Ye<sup>+</sup>.<br>
               <em>Preprint, 2026.</em>
             </p>
             <ul>
               <li>
-                We introduce a four-task benchmark with 200 problems. It measures the accuracy and cost of
-                long-context agent harnesses.
-              </li>
-              <li class="resource-links">
-                <a href="https://arxiv.org/pdf/2609.38137">[PDF]</a>
-                <a href="https://stringnlplab.github.io/longharness/">[Website]</a>
+                We introduce a benchmark that stress-tests language-model harnesses on long-context reasoning
+                while measuring both accuracy and computational cost.
               </li>
             </ul>
+            <p class="resource-links">
+              <a href="https://arxiv.org/pdf/2609.38137">[PDF]</a>
+              <a href="https://stringnlplab.github.io/longharness/">[Website]</a>
+            </p>
           </article>
 
           <article class="publication">
             <p>
               <strong>ClozeMath: Improving Mathematical Reasoning in Language Models by Learning to Fill Equations</strong><br>
-              Quang Hieu Pham*, <u><strong>Thuy Duong Nguyen*</strong></u>, Tung Pham, Anh Tuan Luu, Dat Quoc Nguyen.<br>
-              <em>Findings of the Association for Computational Linguistics: ACL 2025.</em>
+              Quang Hieu Pham<sup>*</sup>, <u><strong>Thuy Duong Nguyen</strong></u><sup>*</sup>,
+              Tung Pham, Anh Tuan Luu, Dat Quoc Nguyen.<br>
+              <em>Findings ACL 2025.</em>
             </p>
             <ul>
               <li>
                 We train language models to connect natural-language plans with mathematical equations through
                 text infilling.
               </li>
-              <li class="resource-links">
-                <a href="https://aclanthology.org/2025.findings-acl.738.pdf">[PDF]</a>
-                <a href="https://arxiv.org/abs/2506.03763">[arXiv]</a>
-              </li>
             </ul>
+            <p class="resource-links">
+              <a href="https://aclanthology.org/2025.findings-acl.738.pdf">[PDF]</a>
+            </p>
           </article>
 
-          <article class="publication">
-            <p>
-              <strong>Retrieval Augmented Generation on Structured Data in Artificial Intelligence Models</strong><br>
-              Dat Quoc Nguyen, Truong Dan Phan Dinh, <u><strong>Thuy Duong Nguyen</strong></u>,
-              Arvind Vardarajan Santhanam.<br>
-              <em>Pending U.S. patent application.</em>
-            </p>
-            <ul>
-              <li>
-                This work supports a personal Text-to-SQL agent for e-commerce applications. It passed Qualcomm's
-                global patent review.
-              </li>
-            </ul>
-          </article>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>© <span class="current-year">2026</span> — <a href="./">Thuy Duong Nguyen</a></p>
-        <ul>
-          <li><a href="mailto:thuyduo3@ualberta.ca">Email</a></li>
-          <li><a href="https://github.com/mi-do-ri">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/thuy-duong-nguyen-833b88209/">LinkedIn</a></li>
-        </ul>
+        <p>Last updated: October 2026.</p>
       </footer>
     </div>
 
+    <script>
+      const navigationLinks = [...document.querySelectorAll('.site-header a[href^="#"]')];
+      const pageSections = navigationLinks
+        .map((link) => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+      function updateActiveLink() {
+        const readingPosition = window.scrollY + Math.min(window.innerHeight * 0.25, 180);
+        let activeSection = pageSections[0];
+
+        pageSections.forEach((section) => {
+          if (section.offsetTop <= readingPosition) {
+            activeSection = section;
+          }
+        });
+
+        navigationLinks.forEach((link) => {
+          const isActive = link.getAttribute('href') === `#${activeSection.id}`;
+          link.classList.toggle('active', isActive);
+
+          if (isActive) {
+            link.setAttribute('aria-current', 'location');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      }
+
+      updateActiveLink();
+      window.addEventListener('scroll', updateActiveLink, { passive: true });
+      window.addEventListener('resize', updateActiveLink);
+    </script>
   </body>
 </html>
