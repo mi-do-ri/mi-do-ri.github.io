@@ -155,16 +155,7 @@
         .map((link) => document.querySelector(link.getAttribute('href')))
         .filter(Boolean);
 
-      function updateActiveLink() {
-        const readingPosition = window.scrollY + Math.min(window.innerHeight * 0.25, 180);
-        let activeSection = pageSections[0];
-
-        pageSections.forEach((section) => {
-          if (section.offsetTop <= readingPosition) {
-            activeSection = section;
-          }
-        });
-
+      function setActiveLink(activeSection) {
         navigationLinks.forEach((link) => {
           const isActive = link.getAttribute('href') === `#${activeSection.id}`;
           link.classList.toggle('active', isActive);
@@ -176,6 +167,33 @@
           }
         });
       }
+
+      function updateActiveLink() {
+        const readingPosition = window.scrollY + Math.min(window.innerHeight * 0.25, 180);
+        let activeSection = pageSections[0];
+
+        pageSections.forEach((section) => {
+          if (section.offsetTop <= readingPosition) {
+            activeSection = section;
+          }
+        });
+
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+          activeSection = pageSections.at(-1);
+        }
+
+        setActiveLink(activeSection);
+      }
+
+      navigationLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          const targetSection = document.querySelector(link.getAttribute('href'));
+
+          if (targetSection) {
+            setActiveLink(targetSection);
+          }
+        });
+      });
 
       updateActiveLink();
       window.addEventListener('scroll', updateActiveLink, { passive: true });
