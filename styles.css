@@ -121,7 +121,7 @@ main section {
 
 .introduction {
   margin-bottom: 2.25rem;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 h1,
@@ -356,7 +356,7 @@ main a:hover {
   }
 
   .introduction {
-    padding-top: 0;
+    padding-top: 0.75rem;
   }
 
   .publication {
